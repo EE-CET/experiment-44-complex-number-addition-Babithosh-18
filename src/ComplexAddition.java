@@ -37,11 +37,9 @@ public class ComplexAddition {
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // First complex number
         int r1 = sc.nextInt();
         int i1 = sc.nextInt();
 
-        // Second complex number
         int r2 = sc.nextInt();
         int i2 = sc.nextInt();
 
@@ -50,10 +48,9 @@ public class ComplexAddition {
 
         Complex result = c1.add(c2);
 
-        // Output in a + ib format
-        System.out.println(result.real + " + i" + result.imag);
+        // Correct Output Format: a + bi
+        System.out.println(result.real + " + " + result.imag + "i");
 
         sc.close();
     }
-    
 }
